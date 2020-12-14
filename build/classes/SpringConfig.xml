@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context/
+  http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <bean id="securityapi" class="com.programming.springdashboard.Coder">
+        <property name="listOfCommiter">
+           <list>
+               <value>85</value>
+               <value>87</value>
+               <value>89</value>
+               <value>92</value>
+               <value>94</value>
+           </list>
+        </property>
+  </bean>
+  
+  <bean id="mymetadata" class="com.programming.springdashboard.QATeam">
+    <property name="myList">
+       <set>
+          <value>Sutherger Kaliper</value>
+          <value>Kayesanga Adnad</value>
+          <value>Joseph Kaweesi</value>
+          <value>Ruhanga Jonathan</value>
+       </set>
+    
+    </property>
+  
+  </bean>
+  <bean id="secureconcept" class="com.programming.springdashboard.Coder">
+    <property name="myConcept">
+       <set>
+          <value>A</value>
+          <value>B</value>
+          <value>C</value>
+          <value>D</value> 
+          <value>E</value>
+          <value>F</value>
+          <value>G</value>
+       </set>
+    
+    </property>
+  
+  </bean>
+  
+  </beans>
