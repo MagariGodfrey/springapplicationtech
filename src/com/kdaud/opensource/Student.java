@@ -3,20 +3,14 @@ package com.kdaud.opensource;
 
 public class Student {
 	
-	private String welcomeCommiter;
+	private Concept concept;
 	
-	public void setWelcomeCommiter(String welcomeCommiter) {
-		this.welcomeCommiter = welcomeCommiter;
+	public void setConcept(Concept concept) {
+		this.concept = concept;
 	}
 	
-	static {
-		System.out.println("Spring FrameWork Application Module");
-	}
-	
-	public void clearForGraduation() {
-	
-		System.out.println(welcomeCommiter);
-		
+	public void callerMethod() {
+		concept.prepareTreatment();
 	}
 	
 }

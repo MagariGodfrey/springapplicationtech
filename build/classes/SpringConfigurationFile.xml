@@ -8,8 +8,14 @@
   http://www.springframework.org/schema/context/spring-context.xsd">
   
   <!-- Other bean definitions-->
+  <!--
   <bean id="usercall" class="com.kdaud.opensource.Student">
   <property name="welcomeCommiter" value="Daud is a Designated Commiter"></property>
-  </bean>
-    
+  </bean> 
+  -->
+   <bean id="systemcall" class="com.kdaud.opensource.Student">
+   <!--   <constructor-arg ref="injectorbean"/> -->  
+   <property name="concept" ref="injectorbean"/>
+   </bean> 
+   <bean id="injectorbean" class="com.kdaud.opensource.Commiter"></bean>
 </beans>
